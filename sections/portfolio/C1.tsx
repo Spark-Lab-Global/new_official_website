@@ -89,7 +89,7 @@ const C1 = () => {
           How We Spark You
         </h2>
         <div className="flex flex-col items-center gap-10">
-          <div className="grid w-full grid-cols-2 justify-center gap-24">
+          <div className="grid w-full grid-cols-1 justify-center gap-10 md:grid-cols-2 md:gap-24">
             <WeDontCare />
             <WeCareAbout />
           </div>

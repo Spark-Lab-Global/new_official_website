@@ -1,6 +1,6 @@
 const FAQ = () => {
   return (
-    <div className="flex flex-row gap-10">
+    <div className="flex flex-col gap-10 md:flex-row">
       <p className="text-mobai-black font-serif text-2xl font-bold whitespace-nowrap">
         Question 1
       </p>

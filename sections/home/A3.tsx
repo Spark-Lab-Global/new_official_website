@@ -21,7 +21,7 @@ const A3 = () => {
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-2xl flex-col gap-10">
         <div className="border-mobai-gray h-96 border-4 bg-[#F4F4F4]"></div>
-        <div className="flex flex-row gap-6">
+        <div className="flex flex-col gap-6 lg:flex-row">
           <Block
             title="Spark is a fire only you can feel."
             description="A spark isn’t a trend, a childhood dream, or a lightning bolt from above.

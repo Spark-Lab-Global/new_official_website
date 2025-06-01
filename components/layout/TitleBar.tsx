@@ -10,14 +10,14 @@ const TitleBar = ({ currentPath = "/" }: TitleBarProps) => {
   const bgColor = isRoot ? "bg-mobai-orange" : "bg-mobai-black";
 
   return (
-    <div class="fixed top-0 z-50 flex w-full items-center justify-between p-6">
+    <div class="fixed top-0 z-50 flex w-full items-center justify-between bg-white p-6">
       <div className="mx-auto flex w-full max-w-screen-2xl items-center justify-between">
         <a href="/">
           <SparkLab class="h-12 w-12 fill-black" />
         </a>
         <nav className="flex flex-row items-center gap-4">
           <ul
-            className={`${textColor} flex flex-row items-center gap-4 text-xl font-bold`}
+            className={`${textColor} hidden flex-row items-center gap-4 text-xl font-bold md:flex`}
           >
             <li>
               <a href="/">About</a>
@@ -26,10 +26,10 @@ const TitleBar = ({ currentPath = "/" }: TitleBarProps) => {
               <a href="/manifesto">Manifesto</a>
             </li>
             <li>
-              <a href="/">Portfolio</a>
+              <a href="/portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="/">People</a>
+              <a href="/people">People</a>
             </li>
           </ul>
           <button

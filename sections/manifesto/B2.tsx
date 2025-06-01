@@ -1,3 +1,5 @@
+import whatIsSparkLab from "@/assets/whatIsSparkLab.png";
+
 const B2 = () => {
   return (
     <div className="p-10">
@@ -31,6 +33,7 @@ const B2 = () => {
             so the brightest rebels can ride at lightspeed. If the timeline
             above excites you more than it scares you, you’re already one of us.
           </p>
+          <img src={whatIsSparkLab.src} alt="Spark Lab" />
           <p className="text-mobai-gray w-full font-serif text-xl">
             We are here to spark rule-makers who live themselves as a creative
             reality. We are here to spark rule-makers who live themselves as a
