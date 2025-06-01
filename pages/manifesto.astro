@@ -1,0 +1,18 @@
+---
+import Next from "@/components/Next.tsx";
+import Layout from "../layouts/Layout.astro";
+import B1 from "@/sections/manifesto/B1.tsx";
+import B2 from "@/sections/manifesto/B2.tsx";
+import B3 from "@/sections/manifesto/B3.tsx";
+import B4 from "@/sections/manifesto/B4.tsx";
+---
+
+<Layout>
+  <div class="flex flex-col gap-10 pt-30">
+    <B1 />
+    <B2 />
+    <B3 />
+    <B4 />
+  </div>
+  <Next title="Portfolio" href="/portfolio" />
+</Layout>
