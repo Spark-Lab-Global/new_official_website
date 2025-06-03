@@ -2,11 +2,11 @@ const D4 = () => {
   return (
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-2xl flex-col items-center gap-10">
-        <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-5xl font-bold underline decoration-2 underline-offset-6">
+        <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-3xl font-bold underline decoration-2 underline-offset-6 lg:text-5xl">
           Our Network
         </h2>
         <div className="flex flex-col items-center gap-10">
-          <p className="text-mobai-gray w-full font-serif text-lg whitespace-pre-line">
+          <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
             Spark Lab 从不是一次性的 program，而是一场持续燃烧的集体创造。
             在过去的一年内，我们持续见证了将近 70 位年龄在 15 至 21
             岁之间的年轻创造者的相遇与绽放。 他们之中：

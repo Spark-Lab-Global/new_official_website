@@ -1,10 +1,10 @@
 const WeDontCare = () => {
   return (
     <div className="flex flex-col items-end gap-6">
-      <p className="text-mobai-black text-right font-serif text-xl font-bold">
+      <p className="text-mobai-black text-right font-serif text-lg font-bold lg:text-xl">
         We don't care
       </p>
-      <ol className="text-mobai-gray list-decimal space-y-4 pl-6 font-serif text-lg">
+      <ol className="text-mobai-gray list-decimal space-y-4 pl-6 text-base lg:text-lg">
         <li className="pl-4">
           <p className="w-full line-through decoration-2">你是不是名校出身</p>
         </li>
@@ -27,10 +27,10 @@ const WeDontCare = () => {
 const WeCareAbout = () => {
   return (
     <div className="flex flex-col gap-6">
-      <p className="text-mobai-black text-left font-serif text-xl font-bold">
+      <p className="text-mobai-black text-left font-serif text-lg font-bold lg:text-xl">
         We care about
       </p>
-      <ol className="text-mobai-gray list-decimal space-y-4 pl-6 font-serif text-lg">
+      <ol className="text-mobai-gray list-decimal space-y-4 pl-6 text-base lg:text-lg">
         <li className="pl-4">
           <p className="w-full">富有创造力与好奇心</p>
         </li>
@@ -55,7 +55,7 @@ const C1 = () => {
   return (
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-2xl flex-col items-center gap-10">
-        <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-5xl font-bold underline decoration-2 underline-offset-6">
+        <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-3xl font-bold underline decoration-2 underline-offset-6 lg:text-5xl">
           How We Spark You
         </h2>
         <div className="flex flex-col items-center gap-10">

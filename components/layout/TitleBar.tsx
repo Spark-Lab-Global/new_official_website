@@ -1,18 +1,28 @@
 import SparkLab from "@/components/icon/SparkLab.tsx";
+import LanguagePicker from "@/components/ui/LanguagePicker.tsx";
 
 interface TitleBarProps {
   currentPath?: string;
+  t: (
+    key:
+      | "nav.about"
+      | "nav.manifesto"
+      | "nav.portfolio"
+      | "nav.people"
+      | "nav.apply",
+  ) => string;
+  translatePath: (path: string) => string;
 }
 
-const TitleBar = ({ currentPath = "/" }: TitleBarProps) => {
-  const isRoot = currentPath === "/";
+const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
+  const isRoot = currentPath === translatePath("/");
   const textColor = isRoot ? "text-mobai-gray" : "text-mobai-black";
   const bgColor = isRoot ? "bg-mobai-orange" : "bg-mobai-black";
 
   return (
-    <div class="fixed top-0 z-50 flex w-full items-center justify-between bg-white p-6">
+    <div class="bg-background fixed top-0 z-50 flex w-full items-center justify-between p-6">
       <div className="mx-auto flex w-full max-w-screen-2xl items-center justify-between">
-        <a href="/">
+        <a href={translatePath("/")}>
           <SparkLab class="h-12 w-12 fill-black" />
         </a>
         <nav className="flex flex-row items-center gap-4">
@@ -20,23 +30,25 @@ const TitleBar = ({ currentPath = "/" }: TitleBarProps) => {
             className={`${textColor} hidden flex-row items-center gap-4 text-xl font-bold md:flex`}
           >
             <li>
-              <a href="/">About</a>
+              <a href={translatePath("/")}>{t("nav.about")}</a>
             </li>
             <li>
-              <a href="/manifesto">Manifesto</a>
+              <a href={translatePath("/manifesto")}>{t("nav.manifesto")}</a>
             </li>
             <li>
-              <a href="/portfolio">Portfolio</a>
+              <a href={translatePath("/portfolio")}>{t("nav.portfolio")}</a>
             </li>
             <li>
-              <a href="/people">People</a>
+              <a href={translatePath("/people")}>{t("nav.people")}</a>
             </li>
           </ul>
-          <button
-            className={`${bgColor} rounded-full px-3 py-1 text-xl font-bold text-white`}
+          <LanguagePicker currentPath={currentPath} testColor={textColor} />
+          <a
+            href={translatePath("/apply")}
+            className={`${bgColor} flex h-9 items-center justify-center rounded-full px-3 font-bold text-white`}
           >
-            Apply
-          </button>
+            {t("nav.apply")}
+          </a>
         </nav>
       </div>
     </div>

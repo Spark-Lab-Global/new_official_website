@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #faf9f5;
   --foreground: #020617;
 
   --black: #000000;
@@ -23,6 +23,17 @@
   --color-mobai-black: var(--black);
   --color-mobai-orange: var(--orange);
   --color-mobai-gray: var(--gray);
+
+  --animate-scroll-infinite: scroll-infinite 16s linear infinite;
+}
+
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
 }
 
 body {

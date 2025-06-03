@@ -3,19 +3,19 @@ const B1 = () => {
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-2xl flex-col items-center gap-10">
         <div className="flex flex-col items-center gap-10">
-          <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-5xl font-bold underline decoration-2 underline-offset-6">
+          <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-3xl font-bold underline decoration-2 underline-offset-6 lg:text-5xl">
             Spark the New Renaissance.
           </h2>
           <div className="flex flex-col items-center gap-1">
-            <p className="text-mobai-gray font-serif text-lg">
+            <p className="text-mobai-gray text-base lg:text-lg">
               从 Spark 到 Startup，
             </p>
-            <p className="text-mobai-gray font-serif text-lg">
+            <p className="text-mobai-gray text-base lg:text-lg">
               我们帮年轻创始人一路燃烧，写进历史。
             </p>
           </div>
         </div>
-        <p className="text-mobai-gray w-full font-serif text-lg whitespace-pre-line">
+        <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
           {`我们对当下的创业文化有一种强烈的失落感。
 
 创业的浪漫时代似乎结束了。

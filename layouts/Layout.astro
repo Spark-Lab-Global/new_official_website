@@ -2,8 +2,17 @@
 import "@/styles/global.css";
 import TitleBar from "@/components/layout/TitleBar.tsx";
 import Footer from "@/components/layout/Footer.tsx";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@/i18n/utils";
 
 const currentPath = Astro.url.pathname;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <!doctype html>
@@ -16,7 +25,7 @@ const currentPath = Astro.url.pathname;
     <title>Astro Basics</title>
   </head>
   <body>
-    <TitleBar currentPath={currentPath} />
+    <TitleBar currentPath={currentPath} t={t} translatePath={translatePath} />
     <main>
       <slot />
     </main>

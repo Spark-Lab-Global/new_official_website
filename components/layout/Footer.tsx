@@ -12,7 +12,7 @@ const Footer = () => {
           <X className="text-mobai-black size-6" />
           <XiaoHongShu className="text-mobai-black size-9" />
         </div>
-        <p className="text-mobai-black font-serif text-xl font-bold">
+        <p className="text-mobai-black hidden font-serif text-xl font-bold md:block">
           Careers丨Solar Grants
         </p>
       </div>

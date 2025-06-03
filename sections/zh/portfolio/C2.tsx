@@ -6,7 +6,7 @@ const C2 = () => {
       <div className="mx-auto flex max-w-screen-2xl flex-col items-center gap-10">
         <div className="flex flex-col items-center gap-10">
           <img src={leanStartup.src} alt="Lean Startup" />
-          <p className="text-mobai-gray w-full font-serif text-lg whitespace-pre-line">
+          <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
             Spark Lab 为年轻创业者提供一套全栈式产品体系，覆盖从 -1 到 10
             的完整成长路径：
             <br />

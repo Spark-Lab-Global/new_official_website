@@ -1,3 +1,8 @@
+import aImage from "@/assets/a3/a.png";
+import bImage from "@/assets/a3/b.png";
+import cImage from "@/assets/a3/c.png";
+import dImage from "@/assets/a3/d.png";
+
 const Block = ({
   title,
   description,
@@ -6,12 +11,39 @@ const Block = ({
   description: string;
 }) => {
   return (
-    <div className="border-mobai-black flex w-full flex-col gap-4 border-t-8 py-4">
-      <p className="font-serif text-xl font-bold">{title}</p>
-      <p className="text-mobai-gray font-serif text-lg">{description}</p>
-      <button className="mt-auto text-left font-serif text-xl font-bold">
+    <div className="border-mobai-black flex w-full flex-col gap-4 border-t-4 py-4 lg:gap-6">
+      <p className="font-serif text-base font-bold lg:text-xl">{title}</p>
+      <p className="text-mobai-gray text-base lg:text-lg">{description}</p>
+      <button className="text-left font-serif text-base font-bold lg:text-xl">
         Learn more
       </button>
+    </div>
+  );
+};
+
+const ImageCarousel = () => {
+  const images = [aImage, bImage, cImage, dImage];
+
+  return (
+    <div className="border-mobai-gray relative h-96 overflow-hidden border-4">
+      <div className="animate-scroll-infinite flex">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image.src}
+            alt={`Image ${index + 1}`}
+            className="h-96 min-w-full flex-shrink-0 object-cover"
+          />
+        ))}
+        {images.map((image, index) => (
+          <img
+            key={`duplicate-${index}`}
+            src={image.src}
+            alt={`Image ${index + 1} duplicate`}
+            className="h-96 min-w-full flex-shrink-0 object-cover"
+          />
+        ))}
+      </div>
     </div>
   );
 };
@@ -20,7 +52,7 @@ const A3 = () => {
   return (
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-2xl flex-col gap-10">
-        <div className="border-mobai-gray h-96 border-4 bg-[#F4F4F4]"></div>
+        <ImageCarousel />
         <div className="flex flex-col gap-6 lg:flex-row">
           <Block
             title="Spark 是内心还没被翻译成语言的火"
