@@ -3,19 +3,19 @@ const B1 = () => {
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-2xl flex-col items-center gap-10">
         <div className="flex flex-col items-center gap-10">
-          <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-6xl font-bold underline decoration-2 underline-offset-6">
+          <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-5xl font-bold underline decoration-2 underline-offset-6">
             Spark the New Renaissance.
           </h2>
           <div className="flex flex-col items-center gap-1">
-            <p className="text-mobai-gray font-serif text-xl">
+            <p className="text-mobai-gray font-serif text-lg">
               From spark to startup
             </p>
-            <p className="text-mobai-gray font-serif text-xl">
+            <p className="text-mobai-gray font-serif text-lg">
               we help young founders burn their way into history.
             </p>
           </div>
         </div>
-        <p className="text-mobai-gray w-full text-center font-serif text-xl whitespace-pre-line">
+        <p className="text-mobai-gray w-full font-serif text-xl whitespace-pre-line">
           {`We feel a deep sense of disillusionment with today’s startup culture.
 
             The romantic era of entrepreneurship seems to be over — or perhaps, in China, the hacker spirit never truly began.

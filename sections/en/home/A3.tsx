@@ -7,9 +7,9 @@ const Block = ({
 }) => {
   return (
     <div className="border-mobai-black flex w-full flex-col gap-4 border-t-8 py-4">
-      <p className="font-serif text-2xl font-bold">{title}</p>
-      <p className="text-mobai-gray font-serif text-xl">{description}</p>
-      <button className="mt-auto text-left font-serif text-2xl font-bold">
+      <p className="font-serif text-xl font-bold">{title}</p>
+      <p className="text-mobai-gray font-serif text-lg">{description}</p>
+      <button className="mt-auto text-left font-serif text-xl font-bold">
         Learn more
       </button>
     </div>

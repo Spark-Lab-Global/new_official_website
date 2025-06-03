@@ -7,6 +7,13 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
   srcDir: ".",
+  i18n: {
+    locales: ["zh", "en"],
+    defaultLocale: "zh",
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
   integrations: [preact(), partytown()],
 
   vite: {
