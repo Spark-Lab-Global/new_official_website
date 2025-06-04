@@ -20,9 +20,9 @@ const Block = ({
     <div className="flex w-full flex-col gap-4 py-4 lg:gap-6">
       <p className="font-serif text-base font-bold lg:text-xl">{titleStr}</p>
       <p className="text-mobai-gray text-base lg:text-lg">{descriptionStr}</p>
-      <button className="text-left font-serif text-base font-bold lg:text-xl">
+      {/* <button className="text-left font-serif text-base font-bold lg:text-xl">
         Learn more
-      </button>
+      </button> */}
     </div>
   );
 };

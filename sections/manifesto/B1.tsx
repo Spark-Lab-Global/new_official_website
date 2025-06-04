@@ -9,10 +9,10 @@ const B1 = ({ t }: B1Props) => {
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-xl flex-col gap-10">
         <div className="flex flex-col gap-10">
-          <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-3xl font-bold underline decoration-2 underline-offset-6 lg:text-5xl">
+          <h2 className="text-mobai-gray decoration-mobai-gray flex items-center justify-center font-serif text-3xl font-bold underline decoration-2 underline-offset-6 lg:text-5xl">
             Spark the New Renaissance.
           </h2>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 justify-center items-center">
             <p className="text-mobai-gray text-base lg:text-lg">
               {t("b1.content1")}
             </p>
@@ -21,7 +21,7 @@ const B1 = ({ t }: B1Props) => {
             </p>
           </div>
         </div>
-        <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
+        <p className="text-mobai-gray w-full text-base whitespace-pre-line text-center lg:text-lg">
           {t("b1.content3")}
         </p>
       </div>
