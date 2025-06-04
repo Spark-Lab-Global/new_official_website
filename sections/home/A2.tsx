@@ -7,9 +7,9 @@ interface A2Props {
 
 const A2 = ({ t, translatePath }: A2Props) => {
   return (
-    <div className="flex flex-col items-center gap-10 p-10">
-      <div className="flex flex-col items-center gap-10">
-        <h2 className="text-3xl font-bold lg:text-5xl">
+    <div className="flex flex-col gap-10 p-10">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-10">
+        <h2 className="font-serif text-3xl font-bold lg:text-5xl">
           <span className="text-mobai-orange decoration-mobai-orange underline decoration-2 underline-offset-6">
             Spark
           </span>
@@ -18,7 +18,7 @@ const A2 = ({ t, translatePath }: A2Props) => {
             the New Renaissance.
           </span>
         </h2>
-        <div className="flex flex-col items-center gap-1">
+        <div className="flex flex-col gap-1">
           <p className="text-mobai-gray text-base lg:text-lg">
             {t("a2.content1")}
           </p>
@@ -27,7 +27,7 @@ const A2 = ({ t, translatePath }: A2Props) => {
           </p>
         </div>
       </div>
-      <div className="flex w-full flex-col items-center gap-1">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-1">
         <nav>
           <ul className="text-mobai-gray flex flex-row items-center gap-2 text-base lg:text-lg">
             <li>
