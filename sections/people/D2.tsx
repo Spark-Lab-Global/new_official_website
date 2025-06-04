@@ -1,3 +1,20 @@
+import a from "@/assets/d2/a.png";
+import b from "@/assets/d2/b.png";
+import c from "@/assets/d2/c.png";
+import d from "@/assets/d2/d.png";
+import e from "@/assets/d2/e.png";
+import f from "@/assets/d2/f.png";
+
+const Block = ({ src }: { src: string }) => {
+  return (
+    <div className="flex flex-col gap-4">
+      <div className="aspect-[3/2] overflow-hidden">
+        <img src={src} alt="Ryan" className="h-full w-full object-cover" />
+      </div>
+    </div>
+  );
+};
+
 const D2 = () => {
   return (
     <div className="p-10">
@@ -6,20 +23,28 @@ const D2 = () => {
           Spark the History
         </h2>
         <div className="flex flex-col items-center gap-10">
-          <p className="text-mobai-gray w-full text-base lg:text-lg">
+          {/* <p className="text-mobai-gray w-full text-base lg:text-lg">
             We are here to spark rule-makers who live themselves as a creative
             reality. We are here to spark rule-makers who live themselves as a
             creative reality. We are here to spark rule-makers who live
             themselves as a creative reality. We are here to spark rule-makers
             who live
-          </p>
-          <p className="text-mobai-gray w-full text-base lg:text-lg">
+          </p> */}
+          <div className="grid grid-cols-2 gap-10 md:grid-cols-3">
+            <Block src={a.src} />
+            <Block src={b.src} />
+            <Block src={c.src} />
+            <Block src={d.src} />
+            <Block src={e.src} />
+            <Block src={f.src} />
+          </div>
+          {/* <p className="text-mobai-gray w-full text-base lg:text-lg">
             We are here to spark rule-makers who live themselves as a creative
             reality. We are here to spark rule-makers who live themselves as a
             creative reality. We are here to spark rule-makers who live
             themselves as a creative reality. We are here to spark rule-makers
             who live
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
