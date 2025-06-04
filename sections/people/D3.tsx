@@ -23,7 +23,7 @@ const D3 = () => {
         <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-3xl font-bold underline decoration-2 underline-offset-6 lg:text-5xl">
           People in Spark Lab
         </h2>
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+        <div className="grid grid-cols-2 gap-10 md:grid-cols-3">
           <Block src={a.src} />
           <Block src={b.src} />
           <Block src={c.src} />
