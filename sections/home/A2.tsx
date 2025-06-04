@@ -19,11 +19,8 @@ const A2 = ({ t, translatePath }: A2Props) => {
           </span>
         </h2>
         <div className="flex flex-col gap-1">
-          <p className="text-mobai-gray text-base lg:text-lg">
+          <p className="text-mobai-gray text-base whitespace-pre-line lg:text-lg">
             {t("a2.content1")}
-          </p>
-          <p className="text-mobai-gray text-base lg:text-lg">
-            {t("a2.content2")}
           </p>
         </div>
       </div>
@@ -68,7 +65,7 @@ const A2 = ({ t, translatePath }: A2Props) => {
           </ul>
         </nav>
         <p className="text-mobai-gray text-base lg:text-lg">
-          {t("a2.content3")}
+          {t("a2.content2")}
         </p>
       </div>
     </div>
