@@ -1,18 +1,28 @@
 ---
-import Next from "@/components/Next.tsx";
+import Next from "@/components/ui/Next";
 import Layout from "@/layouts/Layout.astro";
-import C1 from "@/sections/en/portfolio/C1";
-import C2 from "@/sections/en/portfolio/C2";
+import C1 from "@/sections/portfolio/C1";
+import C2 from "@/sections/portfolio/C2";
 // import C3 from "@/sections/en/portfolio/C3";
 // import C4 from "@/sections/en/portfolio/C4";
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <Layout>
   <div class="flex flex-col gap-10 pt-30">
-    <C1 />
-    <C2 />
+    <C1 t={t} />
+    <C2 t={t} />
     <!-- <C3 />
     <C4 /> -->
   </div>
-  <Next title="People" href="/people" />
+  <Next title="People" href={translatePath("/people")} />
 </Layout>

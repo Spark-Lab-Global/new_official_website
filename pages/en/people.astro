@@ -1,16 +1,26 @@
 ---
-import Next from "@/components/Next.tsx";
+import Next from "@/components/ui/Next";
 import Layout from "@/layouts/Layout.astro";
-import D2 from "@/sections/en/people/D2";
-import D3 from "@/sections/en/people/D3";
-import D4 from "@/sections/en/people/D4";
+import D2 from "@/sections/people/D2";
+import D3 from "@/sections/people/D3";
+import D4 from "@/sections/people/D4";
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <Layout>
   <div class="flex flex-col gap-10 pt-30">
     <D2 />
     <D3 />
-    <D4 />
+    <D4 t={t} />
   </div>
-  <Next title="Apply" href="/apply" />
+  <Next title="Apply" href={translatePath("/apply")} />
 </Layout>

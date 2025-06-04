@@ -1,8 +1,8 @@
 ---
-import A1 from "@/sections/zh/home/A1";
+import A1 from "@/sections/home/A1";
 import A2 from "@/sections/home/A2";
 import A3 from "@/sections/home/A3";
-import Next from "@/components/Next.tsx";
+import Next from "@/components/ui/Next";
 import Layout from "@/layouts/Layout.astro";
 
 import {
@@ -20,7 +20,7 @@ const translatePath = useTranslatedPath(lang);
   <div class="flex flex-col gap-10">
     <A1 />
     <A2 t={t} translatePath={translatePath} />
-    <A3 client:load />
+    <A3 t={t} />
   </div>
-  <Next title="Manifesto" href="/manifesto" />
+  <Next title="Manifesto" href={translatePath("/manifesto")} />
 </Layout>

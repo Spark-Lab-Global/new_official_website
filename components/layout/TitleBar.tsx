@@ -1,27 +1,21 @@
 import SparkLab from "@/components/icon/SparkLab.tsx";
 import LanguagePicker from "@/components/ui/LanguagePicker.tsx";
+import { useTranslations } from "@/i18n/utils";
 
 interface TitleBarProps {
   currentPath?: string;
-  t: (
-    key:
-      | "nav.about"
-      | "nav.manifesto"
-      | "nav.portfolio"
-      | "nav.people"
-      | "nav.apply",
-  ) => string;
+  t: ReturnType<typeof useTranslations>;
   translatePath: (path: string) => string;
 }
 
 const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
   const isRoot = currentPath === translatePath("/");
-  const textColor = isRoot ? "text-mobai-gray" : "text-mobai-black";
-  const bgColor = isRoot ? "bg-mobai-orange" : "bg-mobai-black";
+  const textColor = isRoot ? "text-mobai-gray" : "text-foreground";
+  const bgColor = isRoot ? "bg-[#BA3C00]" : "bg-black";
 
   return (
     <div class="bg-background fixed top-0 z-50 flex w-full items-center justify-between p-6">
-      <div className="mx-auto flex w-full max-w-screen-2xl items-center justify-between">
+      <div className="mx-auto flex w-full max-w-screen-xl items-center justify-between">
         <a href={translatePath("/")}>
           <SparkLab class="h-12 w-12 fill-black" />
         </a>
@@ -41,11 +35,14 @@ const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
             <li>
               <a href={translatePath("/people")}>{t("nav.people")}</a>
             </li>
+            <li>
+              <a href={translatePath("/program")}>{t("nav.program")}</a>
+            </li>
           </ul>
           <LanguagePicker currentPath={currentPath} testColor={textColor} />
           <a
             href={translatePath("/apply")}
-            className={`${bgColor} flex h-9 items-center justify-center rounded-full px-3 font-bold text-white`}
+            className={`${bgColor} flex h-9 items-center justify-center rounded-full px-3 font-bold`}
           >
             {t("nav.apply")}
           </a>

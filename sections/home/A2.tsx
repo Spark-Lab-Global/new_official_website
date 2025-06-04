@@ -1,12 +1,7 @@
+import { useTranslations } from "@/i18n/utils";
+
 interface A2Props {
-  t: (
-    key:
-      | "nav.about"
-      | "nav.manifesto"
-      | "nav.portfolio"
-      | "nav.people"
-      | "nav.apply",
-  ) => string;
+  t: ReturnType<typeof useTranslations>;
   translatePath: (path: string) => string;
 }
 
@@ -25,10 +20,10 @@ const A2 = ({ t, translatePath }: A2Props) => {
         </h2>
         <div className="flex flex-col items-center gap-1">
           <p className="text-mobai-gray text-base lg:text-lg">
-            从 Spark 到 Startup，
+            {t("a2.content1")}
           </p>
           <p className="text-mobai-gray text-base lg:text-lg">
-            我们帮年轻创始人一路燃烧，写进历史。
+            {t("a2.content2")}
           </p>
         </div>
       </div>
@@ -73,7 +68,7 @@ const A2 = ({ t, translatePath }: A2Props) => {
           </ul>
         </nav>
         <p className="text-mobai-gray text-base lg:text-lg">
-          我们不投资 BP，只为热爱买单
+          {t("a2.content3")}
         </p>
       </div>
     </div>

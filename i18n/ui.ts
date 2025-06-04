@@ -1,19 +1,11 @@
-export const languages = {
-  zh: "中文",
-  en: "English",
-};
-
-export const defaultLang = "zh";
-
-export const showDefaultLang = false;
-
-export const ui = {
+const ui = {
   zh: {
     "nav.about": "关于",
     "nav.manifesto": "理念",
     "nav.portfolio": "案例",
     "nav.people": "团队",
     "nav.apply": "申请",
+    "nav.program": "项目",
   },
   en: {
     "nav.about": "About",
@@ -21,5 +13,8 @@ export const ui = {
     "nav.portfolio": "Portfolio",
     "nav.people": "People",
     "nav.apply": "Apply",
+    "nav.program": "Program",
   },
 };
+
+export default ui;
