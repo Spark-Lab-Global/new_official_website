@@ -16,7 +16,7 @@ const B2 = ({ t }: B2Props) => {
           <p className="text-mobai-gray w-full text-base lg:text-lg">
             {t("b2.content1")}
           </p>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-[1fr_1fr]">
+          <div className="grid w-full grid-cols-1 gap-10 md:grid-cols-[1fr_1fr]">
             <img src={whatIsSparkLab.src} alt="Spark Lab" className="w-full" />
             <div className="mt-auto flex flex-col">
               <p className="text-mobai-gray w-full text-base lg:text-lg">

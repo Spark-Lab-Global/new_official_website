@@ -1,4 +1,4 @@
-import leanStartup from "@/assets/leanStartup.png";
+import leanStartup from "@/assets/leanStartup.jpg";
 import { useTranslations } from "@/i18n/utils";
 
 interface C2Props {
