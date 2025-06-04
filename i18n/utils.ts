@@ -1,3 +1,4 @@
+import a1 from "./a1";
 import a2 from "./a2";
 import a3 from "./a3";
 import b1 from "./b1";
@@ -11,6 +12,7 @@ import ui from "./ui";
 const translations = {
   zh: {
     ...ui.zh,
+    ...a1.zh,
     ...a2.zh,
     ...a3.zh,
     ...b1.zh,
@@ -22,6 +24,7 @@ const translations = {
   },
   en: {
     ...ui.en,
+    ...a1.en,
     ...a2.en,
     ...a3.en,
     ...b1.en,
