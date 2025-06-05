@@ -46,7 +46,7 @@ const D3 = () => {
           <Block
             src={d.src}
             name="Zeeland"
-            title="crafting the self-authorship accelerator @spark lab"
+            title="crafting the self-authorship accelerator @ spark lab"
           />
           <Block
             src={e.src}

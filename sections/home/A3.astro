@@ -1,0 +1,35 @@
+---
+import { ImageCarousel } from "@/components/ui/ImageCarousel";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const THESIS_KEYS = ["thesis1", "thesis2", "thesis3"] as const;
+---
+
+<div class="px-10 pb-20">
+  <div class="mx-auto flex max-w-screen-xl flex-col gap-20">
+    <ImageCarousel client:only="preact" />
+    <div class="flex flex-col gap-20">
+      {
+        THESIS_KEYS.map((thesis) => {
+          const title = t(`a3.${thesis}.title` as any);
+          const description = t(`a3.${thesis}.description` as any);
+          return (
+            <div class="flex flex-col gap-20">
+              <p class="text-foreground font-title text-3xl font-bold lg:text-5xl">
+                {Array.isArray(title) ? title.join(" ") : title}
+              </p>
+              <p class="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
+                {Array.isArray(description)
+                  ? description.join(" ")
+                  : description}
+              </p>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</div>
