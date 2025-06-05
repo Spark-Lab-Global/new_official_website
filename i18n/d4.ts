@@ -13,7 +13,7 @@ const d4 = {
 - 有人在拿到顶级基金的投资后，选择在 Spark Lab 重新出发
 - 有人成功筹集近百万美金的种子资金
 - 有人实现项目商业化，年收入接近百万
-- 有人 14 岁就开发出月访问量 30 万的网站，虽身患疾病，却愈发拼命来完成自己对人类的贡献
+- 有人 14 岁就开发出月访问量 30 万的网站，拼命来完成自己对人类的贡献
 - 有人一年内连续迭代了 22 个项目，只为找到那个真正的 spark
 ……
 
@@ -27,15 +27,15 @@ Among them:
 
 - Nearly half chose to take a gap year or drop out, firmly committing to the path of entrepreneurship
 - Most started their first startup at just 16 or 17
-- One built and successfully sold an open-source tool with nearly 10,000 GitHub stars — at age 15
-- Another grew an audience of over 70,000 followers by documenting their building journey
-- Some received investments on the spot during our events
-- One turned their own pain into empathy-driven products that help others heal
-- One restarted their journey at Spark Lab — even after being funded by a top-tier VC
-- Some raised close to $1M in seed funding
-- Some built profitable startups earning nearly $1M in annual revenue
-- One, just 14 years old, created a website with 300K monthly visits — while battling illness, still driven by a mission to contribute to humanity
-- Another built and shipped 22 projects in a single year — just to find that one true spark
+- One built and sold an open-source tool with nearly 10,000 GitHub stars — at age 15
+- One grew a following of over 70,000 by documenting their building journey
+- One secured investment on the spot during our events
+- One turned personal pain into empathy-driven products that help others heal
+- One returned to Spark Lab to start over — even after raising from a top-tier VC
+- One raised nearly $1M in seed funding
+- One built a profitable venture earning close to $1M in annual revenue
+- One, just 14, created a website with 300K monthly visits — driven by a mission to serve the world
+- One built and shipped 22 projects in a single year — in search of their true spark
 …
 
 At Spark Lab, builders never “graduate.”
