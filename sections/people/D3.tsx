@@ -36,28 +36,32 @@ const D3 = () => {
           People in Spark Lab
         </h2>
         <div className="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-4">
-          <Block src={a.src} name="Ryan" title="Building Culture @ Spark Lab" />
-          <Block src={b.src} name="Koji" title="Founding partner @ spark lab" />
+          <Block src={a.src} name="Ryan" title="building culture @ spark lab" />
+          <Block src={b.src} name="Koji" title="founding partner @ spark lab" />
           <Block
             src={c.src}
             name="Aaron"
-            title="Founding partner @ spark lab"
+            title="founding partner @ spark lab"
           />
           <Block
             src={d.src}
             name="Zeeland"
-            title="Crafting the self-authorship accelerator @Spark Lab"
+            title="crafting the self-authorship accelerator @spark lab"
           />
           <Block
             src={e.src}
             name="Troy"
-            title="Brewing sparks & culture @ spark lab"
+            title="brewing sparks&culture @ spark lab"
           />
-          <Block src={f.src} name="Eons" title="Eons" />
+          <Block
+            src={f.src}
+            name="Eons"
+            title="a half-life, sparking it forward @ spark lab"
+          />
           <Block
             src={g.src}
             name="Koi"
-            title="A low-noise tinkerer, weaving tech and humanity @ Spark Lab"
+            title="a low-noise tinkerer, weaving tech and humanity @ spark lab"
           />
         </div>
       </div>
