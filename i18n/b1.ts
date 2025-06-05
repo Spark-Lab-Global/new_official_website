@@ -1,9 +1,8 @@
 const b1 = {
   zh: {
     "b1.content1": "从 Spark 到 Startup，",
-    "b1.content2": "我们帮年轻创始人一路燃烧，写进历史。",
-    "b1.content3": `
-我们对当下的创业文化有一种强烈的失落感。
+    "b1.content2": "我们与年轻创始人一起，将 Spark 打磨为真正的伟大作品。",
+    "b1.content3": `我们对当下的创业文化有一种强烈的失落感。
 
 创业的浪漫时代似乎结束了。
 
@@ -21,49 +20,43 @@ const b1 = {
 我们寻找那些不合常规的年轻创造者，与其建立基于真实表达与共同信仰的信任链，并邀请他们进入 Spark Lab ——一个把审美当作判断力，把创作当作信仰的地方
 
 Everything begins with a Spark
-创造令我们兴奋的事物和生活方式   
-
-Ryan
+创造令我们兴奋的事物和生活方式
 `,
   },
   en: {
     "b1.content1": "From spark to startup,",
-    "b1.content2": "We help young founders burn their way into history.",
-    "b1.content3": `
-We feel a deep sense of disillusionment with today’s startup culture.
+    "b1.content2": "We help young founders turn their spark into legacy.",
+    "b1.content3": `We feel a deep sense of disillusionment with today’s startup culture.
 The romantic era of entrepreneurship seems to be over.
 
 This era cares too much about the pitch, and too little about the motive.
- Too obsessed with markets, and blind to obsession.
+Too obsessed with markets, and blind to obsession.
 
 If something excites you — even if it brings no prestige or polish —
- but you can articulate its overlooked value,
- then not only is it worth doing,
- you should give it everything you’ve got.
+but you can articulate its overlooked value,
+then not only is it worth doing,
+you should give it everything you’ve got.
 
 At Spark Lab, we hold fast to a few simple yet unshakable beliefs:
 There is always a spark within every person — a fire buried deep inside.
- The most successful founders aren’t driven by profit,
- But by an obsession with the world they feel compelled to build.
+The most successful founders aren’t driven by profit,
+But by an obsession with the world they feel compelled to build.
 The most powerful creations are born from those who dare to diverge,
- And stay true to themselves.
+And stay true to themselves.
 Innovation and courage shine brightest in individuals who choose the road less taken —
- They are real heroes.
+They are real heroes.
 True creation requires soil that can hold both divergence and shared ignition —
- A space that is real, open, and safe enough for exploration to happen,
- For sparks to catch,
- And for flames to spread through the fire of others.
+A space that is real, open, and safe enough for exploration to happen,
+For sparks to catch,
+And for flames to spread through the fire of others.
 
 We seek unconventional young creators —
- those with whom we can build a trust chain rooted in honest expression and shared conviction.
- And we invite them into Spark Lab —
- a place where aesthetics is judgment, and creation is belief.
+those with whom we can build a trust chain rooted in honest expression and shared conviction.
+And we invite them into Spark Lab —
+a place where aesthetics is judgment, and creation is belief.
 
 Everything begins with a Spark.
- A life and a world shaped by the things that truly excite us.
-
-
-Ryan
+A life and a world shaped by the things that truly excite us.
 `,
   },
 };
