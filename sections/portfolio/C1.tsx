@@ -45,7 +45,7 @@ const WeCareAbout = ({ t }: C1Props) => {
 const C1 = ({ t }: C1Props) => {
   return (
     <div className="p-10">
-      <div className="mx-auto flex max-w-screen-xl flex-col gap-10">
+      <div className="mx-auto flex max-w-screen-xl flex-col gap-20">
         <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-3xl font-bold underline decoration-2 underline-offset-6 lg:text-5xl">
           How We Spark You
         </h2>

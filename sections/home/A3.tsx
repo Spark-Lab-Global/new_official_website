@@ -17,13 +17,21 @@ const Block = ({
     : description;
 
   return (
-    <div className="flex w-full flex-col gap-4 py-4 lg:gap-6">
-      <p className="font-serif text-base font-bold lg:text-xl">{titleStr}</p>
-      <p className="text-mobai-gray text-base lg:text-lg">{descriptionStr}</p>
-      {/* <button className="text-left font-serif text-base font-bold lg:text-xl">
-        Learn more
-      </button> */}
-    </div>
+    // <div className="flex w-full flex-col gap-4 py-4 lg:gap-6">
+    //   <p className="font-serif text-base font-bold lg:text-xl">{titleStr}</p>
+    //   <p className="text-mobai-gray text-base lg:text-lg">{descriptionStr}</p>
+    //   {/* <button className="text-left font-serif text-base font-bold lg:text-xl">
+    //     Learn more
+    //   </button> */}
+    // </div>
+    <>
+      <p className="text-foreground font-serif text-3xl font-bold lg:text-5xl">
+        {titleStr}
+      </p>
+      <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
+        {descriptionStr}
+      </p>
+    </>
   );
 };
 
@@ -61,9 +69,9 @@ interface A3Props {
 const A3 = ({ t }: A3Props) => {
   return (
     <div className="p-10">
-      <div className="mx-auto flex max-w-screen-xl flex-col gap-10">
+      <div className="mx-auto flex max-w-screen-xl flex-col gap-20">
         <ImageCarousel />
-        <div className="flex flex-col gap-6 lg:flex-row">
+        <div className="flex flex-col gap-20">
           <Block
             title={t("a3.thesis1.title")}
             description={t("a3.thesis1.description")}

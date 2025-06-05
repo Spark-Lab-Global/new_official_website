@@ -9,7 +9,7 @@ interface A2Props {
 const A2 = ({ t, translatePath }: A2Props) => {
   return (
     <div className="flex flex-col gap-10 p-10">
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-10">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-20">
         <h2 className="font-serif text-3xl font-bold lg:text-5xl">
           <span className="text-mobai-orange decoration-mobai-orange underline decoration-2 underline-offset-6">
             Spark

@@ -8,8 +8,8 @@ interface C2Props {
 const C2 = ({ t }: C2Props) => {
   return (
     <div className="p-10">
-      <div className="mx-auto flex max-w-screen-xl flex-col items-center gap-10">
-        <div className="flex flex-col items-center gap-10">
+      <div className="mx-auto flex max-w-screen-xl flex-col items-center gap-20">
+        <div className="flex flex-col items-center gap-20">
           <img src={leanStartup.src} alt="Lean Startup" />
           <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
             {t("c2.content")}

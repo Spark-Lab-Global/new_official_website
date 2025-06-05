@@ -12,7 +12,7 @@ const FAQ = ({
 
   return (
     <>
-      <p className="text-foreground font-serif text-lg font-bold lg:text-xl">
+      <p className="text-foreground font-serif text-3xl font-bold lg:text-5xl">
         {questionText || "Question 1"}
       </p>
       <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
@@ -30,11 +30,11 @@ interface B3Props {
 const B3 = ({ t }: B3Props) => {
   return (
     <div className="p-10">
-      <div className="mx-auto flex max-w-screen-xl flex-col gap-10">
+      <div className="mx-auto flex max-w-screen-xl flex-col gap-20">
         <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-3xl font-bold underline decoration-2 underline-offset-6 lg:text-5xl">
           FAQ
         </h2>
-        <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-[minmax(0,320px)_1fr]">
+        <div className="grid grid-cols-1 items-start gap-20 md:grid-cols-[minmax(0,320px)_1fr]">
           <FAQ question={t("b3.question1")} answer={t("b3.answer1")} />
           <FAQ question={t("b3.question2")} answer={t("b3.answer2")} />
           <FAQ question={t("b3.question3")} answer={t("b3.answer3")} />
