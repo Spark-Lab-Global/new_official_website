@@ -25,6 +25,9 @@
   --color-mobai-gray: var(--gray);
 
   --animate-scroll-infinite: scroll-infinite 16s linear infinite;
+
+  --font-title: var(--font-title);
+  --font-body: var(--font-body);
 }
 
 @keyframes scroll-infinite {
@@ -39,5 +42,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
 }

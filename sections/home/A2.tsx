@@ -10,14 +10,14 @@ const A2 = ({ t, translatePath }: A2Props) => {
   return (
     <div className="flex flex-col gap-10 p-10">
       <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-20">
-        <h2 className="font-serif text-3xl font-bold lg:text-5xl">
+        <h2 className="font-title text-3xl font-bold lg:text-5xl">
           <span className="text-mobai-orange decoration-mobai-orange">
             Spark
           </span>
           <span className="text-foreground"> the New Renaissance.</span>
         </h2>
         {/* <div className="relative flex flex-col gap-1"> */}
-        <p className="text-mobai-gray text-base whitespace-pre-line lg:text-lg">
+        <p className="text-mobai-gray font-body text-base whitespace-pre-line lg:text-lg">
           {t("a2.content1")}
         </p>
         {/* <img

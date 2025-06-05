@@ -25,7 +25,7 @@ const Block = ({
     //   </button> */}
     // </div>
     <>
-      <p className="text-foreground font-serif text-3xl font-bold lg:text-5xl">
+      <p className="text-foreground font-title text-3xl font-bold lg:text-5xl">
         {titleStr}
       </p>
       <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">

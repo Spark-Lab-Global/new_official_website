@@ -1,5 +1,6 @@
 ---
 import "@/styles/global.css";
+import { Font } from "astro:assets";
 import TitleBar from "@/components/layout/TitleBar.tsx";
 import Footer from "@/components/layout/Footer.tsx";
 import {
@@ -23,6 +24,8 @@ const translatePath = useTranslatedPath(lang);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
+    <Font cssVariable="--font-title" preload />
+    <Font cssVariable="--font-body" preload />
   </head>
   <body>
     <TitleBar currentPath={currentPath} t={t} translatePath={translatePath} />

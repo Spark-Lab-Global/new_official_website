@@ -12,7 +12,7 @@ const FAQ = ({
 
   return (
     <>
-      <p className="text-foreground font-serif text-3xl font-bold lg:text-5xl">
+      <p className="text-foreground font-title text-3xl font-bold lg:text-5xl">
         {questionText || "Question 1"}
       </p>
       <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
@@ -31,7 +31,7 @@ const B3 = ({ t }: B3Props) => {
   return (
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-xl flex-col gap-20">
-        <h2 className="text-foreground font-serif text-3xl font-bold lg:text-5xl">
+        <h2 className="text-foreground font-title text-3xl font-bold lg:text-5xl">
           FAQ
         </h2>
         <div className="grid grid-cols-1 items-start gap-20 md:grid-cols-[minmax(0,320px)_1fr]">

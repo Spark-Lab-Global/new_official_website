@@ -9,7 +9,7 @@ const D1 = () => {
       }}
     >
       <div className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col items-center justify-center p-10">
-        <h1 className="text-center text-4xl leading-tight font-bold tracking-tight whitespace-pre-line text-white drop-shadow-2xl sm:text-6xl lg:text-7xl xl:text-8xl">
+        <h1 className="font-title text-center text-4xl leading-tight font-bold tracking-tight whitespace-pre-line text-white drop-shadow-2xl sm:text-6xl lg:text-7xl xl:text-8xl">
           Find your spark by getting lost
         </h1>
       </div>

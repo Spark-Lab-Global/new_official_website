@@ -4,7 +4,7 @@ const B4 = () => {
   return (
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-xl flex-col items-center gap-20">
-        <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-5xl font-bold underline decoration-2 underline-offset-6">
+        <h2 className="text-mobai-gray decoration-mobai-gray font-title text-5xl font-bold underline decoration-2 underline-offset-6">
           Download Our Spark Deck
         </h2>
         <div className="flex flex-col items-center gap-20">
