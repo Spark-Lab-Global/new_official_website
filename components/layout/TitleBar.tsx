@@ -35,9 +35,9 @@ const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
             <li>
               <a href={translatePath("/people")}>{t("nav.people")}</a>
             </li>
-            <li>
+            {/* <li>
               <a href={translatePath("/program")}>{t("nav.program")}</a>
-            </li>
+            </li> */}
           </ul>
           <LanguagePicker currentPath={currentPath} testColor={textColor} />
           <a
