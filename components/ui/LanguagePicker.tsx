@@ -38,7 +38,7 @@ const LanguagePicker = ({
 
   return (
     <div
-      className={`flex h-9 flex-row items-center justify-center gap-2 rounded-full border-2 border-[#3A3A3A] px-3 font-bold ${testColor}`}
+      className={`flex h-9 flex-row items-center justify-center gap-2 rounded-full border-2 border-[#3A3A3A] px-3 font-medium ${testColor}`}
     >
       <a href={getPathForLang(basePath)}>{targetLabel}</a>
     </div>

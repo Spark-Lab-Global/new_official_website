@@ -1,4 +1,4 @@
-import ryan from "@/assets/ryan.svg";
+import a from "@/assets/a2/a.svg";
 import { useTranslations } from "@/i18n/utils";
 
 interface A2Props {
@@ -9,7 +9,7 @@ interface A2Props {
 const A2 = ({ t, translatePath }: A2Props) => {
   return (
     <div className="flex flex-col gap-10 p-10">
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-20">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-10">
         <h2 className="font-title text-3xl font-bold lg:text-5xl">
           <span className="text-mobai-orange decoration-mobai-orange">
             Spark
@@ -20,12 +20,7 @@ const A2 = ({ t, translatePath }: A2Props) => {
         <p className="text-mobai-gray font-body text-base whitespace-pre-line lg:text-lg">
           {t("a2.content1")}
         </p>
-        {/* <img
-            src={ryan.src}
-            alt="ryan"
-            className="absolute right-0 bottom-0 w-24 lg:w-32"
-          />
-        </div> */}
+        <img src={a.src} alt="Spark the New Renaissance" className="w-full" />
       </div>
       <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-1">
         <nav>

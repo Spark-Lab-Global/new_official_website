@@ -68,7 +68,7 @@ interface A3Props {
 
 const A3 = ({ t }: A3Props) => {
   return (
-    <div className="p-10">
+    <div className="px-10 pb-20">
       <div className="mx-auto flex max-w-screen-xl flex-col gap-20">
         <ImageCarousel />
         <div className="flex flex-col gap-20">

@@ -21,7 +21,7 @@ const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
         </a>
         <nav className="flex flex-row items-center gap-4">
           <ul
-            className={`${textColor} hidden flex-row items-center gap-4 text-xl font-bold md:flex`}
+            className={`${textColor} hidden flex-row items-center gap-4 text-xl font-medium md:flex`}
           >
             <li>
               <a href={translatePath("/")}>{t("nav.about")}</a>
@@ -42,7 +42,7 @@ const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
           <LanguagePicker currentPath={currentPath} testColor={textColor} />
           <a
             href={translatePath("/apply")}
-            className={`${bgColor} flex h-9 items-center justify-center rounded-full px-3 font-bold`}
+            className={`${bgColor} flex h-9 items-center justify-center rounded-full px-3 font-medium`}
           >
             {t("nav.apply")}
           </a>
