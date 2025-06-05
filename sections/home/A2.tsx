@@ -1,3 +1,4 @@
+import ryan from "@/assets/ryan.svg";
 import { useTranslations } from "@/i18n/utils";
 
 interface A2Props {
@@ -18,10 +19,15 @@ const A2 = ({ t, translatePath }: A2Props) => {
             the New Renaissance.
           </span>
         </h2>
-        <div className="flex flex-col gap-1">
+        <div className="relative flex flex-col gap-1">
           <p className="text-mobai-gray text-base whitespace-pre-line lg:text-lg">
             {t("a2.content1")}
           </p>
+          <img
+            src={ryan.src}
+            alt="ryan"
+            className="absolute right-0 bottom-0 w-24 lg:w-32"
+          />
         </div>
       </div>
       <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-1">

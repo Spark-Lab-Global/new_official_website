@@ -18,9 +18,7 @@ const a2 = {
 我们寻找那些不合常规的年轻创造者，与其建立基于真实表达与共同信仰的信任链，并邀请他们进入 Spark Lab ——一个把审美当作判断力，把创作当作信仰的地方
 
 Everything begins with a Spark
-创造令我们兴奋的事物和生活方式   
-
-Ryan
+创造令我们兴奋的事物和生活方式
 `,
     "a2.content2": "我们不投资 BP，只为热爱买单",
   },
@@ -56,9 +54,6 @@ We seek unconventional young creators —
 
 Everything begins with a Spark.
  A life and a world shaped by the things that truly excite us.
-
-
-Ryan
 `,
     "a2.content2": "We don’t fund decks. We fund obsessions",
   },

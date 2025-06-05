@@ -1,6 +1,7 @@
 ---
 import Next from "@/components/ui/Next";
 import Layout from "@/layouts/Layout.astro";
+import D1 from "@/sections/people/D1";
 import D2 from "@/sections/people/D2";
 import D3 from "@/sections/people/D3";
 import D4 from "@/sections/people/D4";
@@ -17,7 +18,8 @@ const translatePath = useTranslatedPath(lang);
 ---
 
 <Layout>
-  <div class="flex flex-col gap-10 pt-30">
+  <div class="flex flex-col gap-10">
+    <D1 />
     <D2 />
     <D3 />
     <D4 t={t} />
