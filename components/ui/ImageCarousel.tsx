@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "preact/hooks";
 
 const CONFIG = {
   IMAGE_HEIGHT: 500,
-  AUTO_SCROLL_SPEED: 16,
+  AUTO_SCROLL_SPEED: 8,
   BORDER_WIDTH: 4,
   BORDER_COLOR: "#3A3A3A",
 } as const;
