@@ -12,7 +12,7 @@ const LanguagePicker = ({
 }: LanguagePickerProps) => {
   const getPathWithoutLang = (path: string) => {
     const segments = path.split("/").filter(Boolean);
-    if (segments.length > 0 && (segments[0] === "zh" || segments[0] === "en")) {
+    if (segments.length > 0 && (segments[0] === "en" || segments[0] === "zh")) {
       return "/" + segments.slice(1).join("/");
     }
     return path;
@@ -20,16 +20,16 @@ const LanguagePicker = ({
 
   const getCurrentLang = (path: string) => {
     const segments = path.split("/").filter(Boolean);
-    if (segments.length > 0 && (segments[0] === "zh" || segments[0] === "en")) {
+    if (segments.length > 0 && (segments[0] === "en" || segments[0] === "zh")) {
       return segments[0];
     }
-    return "zh";
+    return "en";
   };
 
   const basePath = getPathWithoutLang(currentPath);
   const currentLang = getCurrentLang(currentPath);
 
-  const targetLang = currentLang === "zh" ? "en" : "zh";
+  const targetLang = currentLang === "en" ? "zh" : "en";
   const targetLabel = languages[targetLang as keyof typeof languages];
 
   const getPathForLang = useTranslatedPath(
