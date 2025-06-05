@@ -14,10 +14,7 @@ const A2 = ({ t, translatePath }: A2Props) => {
           <span className="text-mobai-orange decoration-mobai-orange">
             Spark
           </span>
-          <span className="text-mobai-gray decoration-mobai-gray">
-            {" "}
-            the New Renaissance.
-          </span>
+          <span className="text-foreground"> the New Renaissance.</span>
         </h2>
         {/* <div className="relative flex flex-col gap-1"> */}
         <p className="text-mobai-gray text-base whitespace-pre-line lg:text-lg">

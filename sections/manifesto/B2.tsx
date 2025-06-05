@@ -9,7 +9,7 @@ const B2 = ({ t }: B2Props) => {
   return (
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-xl flex-col gap-20">
-        <h2 className="text-mobai-gray decoration-mobai-gray font-serif text-3xl font-bold lg:text-5xl">
+        <h2 className="text-foreground font-serif text-3xl font-bold lg:text-5xl">
           What is Spark Lab?
         </h2>
         <div className="flex flex-col items-center gap-20">

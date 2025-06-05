@@ -10,7 +10,7 @@ const B1 = ({ t }: B1Props) => {
     <div className="p-10">
       <div className="mx-auto flex w-fit max-w-screen-xl flex-col gap-20">
         <div className="flex flex-col gap-20">
-          <h2 className="text-mobai-gray decoration-mobai-gray flex font-serif text-3xl font-bold lg:text-5xl">
+          <h2 className="text-foreground flex font-serif text-3xl font-bold lg:text-5xl">
             Spark the New Renaissance.
           </h2>
           <div className="flex flex-col gap-1">
