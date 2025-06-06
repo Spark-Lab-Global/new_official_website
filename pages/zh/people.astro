@@ -6,6 +6,10 @@ import D2 from "@/sections/people/D2";
 import D3 from "@/sections/people/D3";
 import D4 from "@/sections/people/D4";
 
+import { getImage } from "astro:assets";
+import d1_a from "@/assets/d1/a.webp";
+import d1_b from "@/assets/d1/b.svg";
+
 import {
   getLangFromUrl,
   useTranslations,
@@ -15,11 +19,21 @@ import {
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+const d1_a_Image = await getImage({
+  src: d1_a,
+  format: "webp",
+});
+
+const d1_b_Image = await getImage({
+  src: d1_b,
+  format: "svg",
+});
 ---
 
 <Layout>
   <div class="flex flex-col gap-20">
-    <D1 />
+    <D1 imageSrc={d1_a_Image.src} imageSrcB={d1_b_Image.src} />
     <D2 />
     <D3 />
     <D4 t={t} />

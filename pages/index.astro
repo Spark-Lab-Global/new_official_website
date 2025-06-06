@@ -5,6 +5,10 @@ import A3 from "@/sections/home/A3.astro";
 import Next from "@/components/ui/Next";
 import Layout from "@/layouts/Layout.astro";
 
+import { getImage } from "astro:assets";
+import a1_a from "@/assets/a1/a.png";
+import a2_a from "@/assets/a2/a.svg";
+
 import {
   getLangFromUrl,
   useTranslations,
@@ -14,12 +18,22 @@ import {
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+const a1_a_Image = await getImage({
+  src: a1_a,
+  format: "webp",
+});
+
+const a2_a_Image = await getImage({
+  src: a2_a,
+  format: "svg",
+});
 ---
 
 <Layout>
   <div class="flex flex-col gap-20">
-    <A1 t={t} />
-    <A2 t={t} translatePath={translatePath} />
+    <A1 imageSrc={a1_a_Image.src} client:load />
+    <A2 imageSrc={a2_a_Image.src} t={t} translatePath={translatePath} />
     <A3 t={t} />
   </div>
   <Next title="Manifesto" href={translatePath("/manifesto")} />

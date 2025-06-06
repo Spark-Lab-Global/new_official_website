@@ -6,6 +6,9 @@ import C2 from "@/sections/portfolio/C2";
 // import C3 from "@/sections/en/portfolio/C3";
 // import C4 from "@/sections/en/portfolio/C4";
 
+import { getImage } from "astro:assets";
+import c2_a from "@/assets/c2/a.jpg";
+
 import {
   getLangFromUrl,
   useTranslations,
@@ -15,12 +18,17 @@ import {
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+const c2_a_Image = await getImage({
+  src: c2_a,
+  format: "webp",
+});
 ---
 
 <Layout>
   <div class="flex flex-col gap-20 pt-30">
     <C1 t={t} />
-    <C2 t={t} />
+    <C2 t={t} imageSrc={c2_a_Image.src} />
     <!-- <C3 />
     <C4 /> -->
   </div>

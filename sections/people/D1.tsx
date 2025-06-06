@@ -1,16 +1,18 @@
-import a from "@/assets/d1/a.webp";
-import b from "@/assets/d1/b.svg";
+interface D1Props {
+  imageSrc?: string;
+  imageSrcB?: string;
+}
 
-const D1 = () => {
+const D1 = ({ imageSrc, imageSrcB }: D1Props) => {
   return (
     <div
       className="relative flex h-screen flex-col bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url(${a.src})`,
+        backgroundImage: `url(${imageSrc})`,
       }}
     >
       <img
-        src={b.src}
+        src={imageSrcB}
         alt=""
         className="absolute inset-0 z-10 h-full w-full object-cover"
       />

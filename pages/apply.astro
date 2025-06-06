@@ -4,11 +4,19 @@ import E1 from "@/sections/apply/E1";
 import E2 from "@/sections/apply/E2";
 // import E3 from "@/sections/apply/E3";
 import E4 from "@/sections/apply/E4";
+
+import { getImage } from "astro:assets";
+import e1_a from "@/assets/e1/a.png";
+
+const e1_a_Image = await getImage({
+  src: e1_a,
+  format: "webp",
+});
 ---
 
 <Layout>
   <div class="flex flex-col gap-10">
-    <E1 />
+    <E1 imageSrc={e1_a_Image.src} />
     <E2 />
     <!-- <E3 /> -->
     <E4 />

@@ -1,11 +1,11 @@
-import whatIsSparkLab from "@/assets/whatIsSparkLab.png";
 import { useTranslations } from "@/i18n/utils";
 
 interface B2Props {
   t: ReturnType<typeof useTranslations>;
+  imageSrc?: string;
 }
 
-const B2 = ({ t }: B2Props) => {
+const B2 = ({ t, imageSrc }: B2Props) => {
   return (
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-xl flex-col gap-20">
@@ -17,7 +17,7 @@ const B2 = ({ t }: B2Props) => {
             {t("b2.content1")}
           </p>
           <div className="grid w-full grid-cols-1 gap-20 md:grid-cols-[1fr_1fr]">
-            <img src={whatIsSparkLab.src} alt="Spark Lab" className="w-full" />
+            <img src={imageSrc} alt="Spark Lab" className="w-full" />
             <div className="mt-auto flex flex-col gap-20">
               <p className="text-mobai-gray w-full text-base lg:text-lg">
                 <span className="font-bold">Mission:</span> {t("b2.content2")}

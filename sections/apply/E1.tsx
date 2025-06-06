@@ -1,11 +1,13 @@
-import a from "@/assets/e1/a.png";
+interface E1Props {
+  imageSrc?: string;
+}
 
-const E1 = () => {
+const E1 = ({ imageSrc }: E1Props) => {
   return (
     <div
       className="relative flex h-screen flex-col bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url(${a.src})`,
+        backgroundImage: `url(${imageSrc})`,
       }}
     ></div>
   );
