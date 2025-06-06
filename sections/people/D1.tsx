@@ -1,4 +1,4 @@
-import a from "@/assets/d1/a.png";
+import a from "@/assets/d1/a.svg";
 
 const D1 = () => {
   return (
