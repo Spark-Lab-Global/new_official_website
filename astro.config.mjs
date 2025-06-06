@@ -17,7 +17,7 @@ export default defineConfig({
         provider: fontProviders.google(),
         name: "Red Hat Text",
         cssVariable: "--font-body",
-        weights: [400, 500],
+        weights: [400, 500, 600, 700],
       },
     ],
   },
