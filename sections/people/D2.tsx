@@ -34,7 +34,7 @@ const D2 = () => {
             who live
           </p> */}
           <div className="grid grid-cols-2 gap-10 md:grid-cols-3">
-            <Block src={a.src} name="The beatles" />
+            <Block src={a.src} name="The Beatles" />
             <Block src={b.src} name="Jony Ive" />
             <Block src={c.src} name="Richard Feynman" />
             <Block src={d.src} name="James Turrell" />

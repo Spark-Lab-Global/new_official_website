@@ -7,7 +7,7 @@ import C2 from "@/sections/portfolio/C2";
 // import C4 from "@/sections/zh/portfolio/C4";
 
 import { getImage } from "astro:assets";
-import c2_a from "@/assets/c2/a.jpg";
+import c2_a from "@/assets/c2/a.svg";
 
 import {
   getLangFromUrl,
@@ -21,7 +21,7 @@ const translatePath = useTranslatedPath(lang);
 
 const c2_a_Image = await getImage({
   src: c2_a,
-  format: "webp",
+  format: "svg",
 });
 ---
 
