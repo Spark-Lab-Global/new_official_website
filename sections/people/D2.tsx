@@ -1,10 +1,3 @@
-import a from "@/assets/d2/a.png";
-import b from "@/assets/d2/b.png";
-import c from "@/assets/d2/c.png";
-import d from "@/assets/d2/d.png";
-import e from "@/assets/d2/e.png";
-import f from "@/assets/d2/f.png";
-
 const Block = ({ src, name }: { src: string; name: string }) => {
   return (
     <div className="flex flex-col gap-4">
@@ -18,7 +11,15 @@ const Block = ({ src, name }: { src: string; name: string }) => {
   );
 };
 
-const D2 = () => {
+interface D2Props {
+  images?: Array<{
+    src: string;
+    width?: number;
+    height?: number;
+    [key: string]: any;
+  }>;
+}
+const D2 = ({ images }: D2Props) => {
   return (
     <div className="p-10">
       <div className="mx-auto flex max-w-screen-xl flex-col gap-10">
@@ -34,12 +35,12 @@ const D2 = () => {
             who live
           </p> */}
           <div className="grid grid-cols-2 gap-10 md:grid-cols-3">
-            <Block src={a.src} name="The Beatles" />
-            <Block src={b.src} name="Jony Ive" />
-            <Block src={c.src} name="Richard Feynman" />
-            <Block src={d.src} name="James Turrell" />
-            <Block src={e.src} name="Nikola Tesla" />
-            <Block src={f.src} name="Bruce lee" />
+            <Block src={images![0].src} name="The Beatles" />
+            <Block src={images![1].src} name="Jony Ive" />
+            <Block src={images![2].src} name="Richard Feynman" />
+            <Block src={images![3].src} name="James Turrell" />
+            <Block src={images![4].src} name="Nikola Tesla" />
+            <Block src={images![5].src} name="Bruce lee" />
           </div>
           {/* <p className="text-mobai-gray w-full text-base lg:text-lg">
             We are here to spark rule-makers who live themselves as a creative

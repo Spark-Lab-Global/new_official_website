@@ -1,18 +1,22 @@
 interface D1Props {
-  imageSrc?: string;
-  imageSrcB?: string;
+  images?: Array<{
+    src: string;
+    width?: number;
+    height?: number;
+    [key: string]: any;
+  }>;
 }
 
-const D1 = ({ imageSrc, imageSrcB }: D1Props) => {
+const D1 = ({ images }: D1Props) => {
   return (
     <div
       className="relative flex h-screen flex-col bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url(${imageSrc})`,
+        backgroundImage: `url(${images![0].src})`,
       }}
     >
       <img
-        src={imageSrcB}
+        src={images![1].src}
         alt=""
         className="absolute inset-0 z-10 h-full w-full object-cover"
       />

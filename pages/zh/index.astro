@@ -8,6 +8,10 @@ import Layout from "@/layouts/Layout.astro";
 import { getImage } from "astro:assets";
 import a1_a from "@/assets/a1/a.png";
 import a2_a from "@/assets/a2/a.svg";
+import a3_a from "@/assets/a3/a.png";
+import a3_b from "@/assets/a3/b.png";
+import a3_c from "@/assets/a3/c.png";
+import a3_d from "@/assets/a3/d.png";
 
 import {
   getLangFromUrl,
@@ -19,22 +23,41 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 
-const a1_a_Image = await getImage({
+const a1_a_image = await getImage({
   src: a1_a,
   format: "webp",
 });
 
-const a2_a_Image = await getImage({
+const a2_a_image = await getImage({
   src: a2_a,
   format: "svg",
 });
+
+const a3_images = await Promise.all([
+  getImage({
+    src: a3_a,
+    format: "webp",
+  }),
+  getImage({
+    src: a3_b,
+    format: "webp",
+  }),
+  getImage({
+    src: a3_c,
+    format: "webp",
+  }),
+  getImage({
+    src: a3_d,
+    format: "webp",
+  }),
+]);
 ---
 
 <Layout>
   <div class="flex flex-col gap-20">
-    <A1 imageSrc={a1_a_Image.src} />
-    <A2 imageSrc={a2_a_Image.src} t={t} translatePath={translatePath} />
-    <A3 t={t} />
+    <A1 imageSrc={a1_a_image.src} />
+    <A2 imageSrc={a2_a_image.src} t={t} translatePath={translatePath} />
+    <A3 t={t} images={a3_images} />
   </div>
   <Next title="Manifesto" href={translatePath("/manifesto")} />
 </Layout>

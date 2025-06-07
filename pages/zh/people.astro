@@ -9,6 +9,12 @@ import D4 from "@/sections/people/D4";
 import { getImage } from "astro:assets";
 import d1_a from "@/assets/d1/a.webp";
 import d1_b from "@/assets/d1/b.svg";
+import d2_a from "@/assets/d2/a.png";
+import d2_b from "@/assets/d2/b.png";
+import d2_c from "@/assets/d2/c.png";
+import d2_d from "@/assets/d2/d.png";
+import d2_e from "@/assets/d2/e.png";
+import d2_f from "@/assets/d2/f.png";
 
 import {
   getLangFromUrl,
@@ -20,21 +26,49 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 
-const d1_a_Image = await getImage({
-  src: d1_a,
-  format: "webp",
-});
+const d1_images = await Promise.all([
+  getImage({
+    src: d1_a,
+    format: "webp",
+  }),
+  getImage({
+    src: d1_b,
+    format: "svg",
+  }),
+]);
 
-const d1_b_Image = await getImage({
-  src: d1_b,
-  format: "svg",
-});
+const d2_images = await Promise.all([
+  getImage({
+    src: d2_a,
+    format: "webp",
+  }),
+  getImage({
+    src: d2_b,
+    format: "webp",
+  }),
+  getImage({
+    src: d2_c,
+    format: "webp",
+  }),
+  getImage({
+    src: d2_d,
+    format: "webp",
+  }),
+  getImage({
+    src: d2_e,
+    format: "webp",
+  }),
+  getImage({
+    src: d2_f,
+    format: "webp",
+  }),
+]);
 ---
 
 <Layout>
   <div class="flex flex-col gap-20">
-    <D1 imageSrc={d1_a_Image.src} imageSrcB={d1_b_Image.src} />
-    <D2 />
+    <D1 images={d1_images} />
+    <D2 images={d2_images} />
     <D3 />
     <D4 t={t} />
   </div>

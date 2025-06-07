@@ -8,7 +8,7 @@ import E4 from "@/sections/apply/E4";
 import { getImage } from "astro:assets";
 import e1_a from "@/assets/e1/a.png";
 
-const e1_a_Image = await getImage({
+const e1_a_image = await getImage({
   src: e1_a,
   format: "webp",
 });
@@ -16,7 +16,7 @@ const e1_a_Image = await getImage({
 
 <Layout>
   <div class="flex flex-col gap-10">
-    <E1 imageSrc={e1_a_Image.src} />
+    <E1 imageSrc={e1_a_image.src} />
     <E2 />
     <!-- <E3 /> -->
     <E4 />

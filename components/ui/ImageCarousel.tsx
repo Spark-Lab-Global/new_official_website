@@ -11,14 +11,25 @@ const CONFIG = {
   BORDER_COLOR: "#3A3A3A",
 } as const;
 
-const IMAGES = [aImage, bImage, cImage, dImage] as const;
+const DEFAULT_IMAGES = [aImage, bImage, cImage, dImage] as const;
+
+interface ImageData {
+  src: string;
+  width?: number;
+  height?: number;
+  format?: string;
+}
+
+interface ImageCarouselProps {
+  images?: ImageData[];
+}
 
 interface DragState {
   x: number;
   scrollX: number;
 }
 
-const useCarousel = () => {
+const useCarousel = (images: ImageData[]) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [scrollX, setScrollX] = useState(0);
   const [imageWidths, setImageWidths] = useState<number[]>([]);
@@ -31,7 +42,7 @@ const useCarousel = () => {
   useEffect(() => {
     const loadImageDimensions = async () => {
       const widths = await Promise.all(
-        IMAGES.map(
+        images.map(
           (image) =>
             new Promise<number>((resolve) => {
               const img = new Image();
@@ -47,7 +58,7 @@ const useCarousel = () => {
     };
 
     loadImageDimensions();
-  }, []);
+  }, [images]);
 
   const handleDragStart = (clientX: number) => {
     setIsDragging(true);
@@ -116,11 +127,14 @@ const useCarousel = () => {
   };
 };
 
-export const ImageCarousel = () => {
-  const { scrollRef, imageWidths, totalWidth, handleDragStart } = useCarousel();
+export const ImageCarousel = ({ images }: ImageCarouselProps) => {
+  const imagesToUse: ImageData[] =
+    images || DEFAULT_IMAGES.map((img) => ({ src: img.src }));
+  const { scrollRef, imageWidths, totalWidth, handleDragStart } =
+    useCarousel(imagesToUse);
 
   const renderImages = (isDuplicate = false) =>
-    IMAGES.map((image, index) => (
+    imagesToUse.map((image, index) => (
       <img
         key={`${isDuplicate ? "dup-" : ""}${index}`}
         src={image.src}

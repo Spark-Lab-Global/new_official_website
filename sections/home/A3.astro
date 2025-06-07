@@ -6,11 +6,23 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const THESIS_KEYS = ["thesis1", "thesis2", "thesis3"] as const;
+
+interface Props {
+  t?: any;
+  images?: Array<{
+    src: string;
+    width?: number;
+    height?: number;
+    [key: string]: any;
+  }>;
+}
+
+const { images } = Astro.props;
 ---
 
 <div class="px-10 pb-20">
   <div class="mx-auto flex max-w-screen-xl flex-col gap-20">
-    <ImageCarousel client:only="preact" />
+    <ImageCarousel client:only="preact" images={images} />
     <div class="flex flex-col gap-20">
       {
         THESIS_KEYS.map((thesis) => {
