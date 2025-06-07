@@ -14,8 +14,8 @@ const Block = ({
   content: string;
 }) => {
   return (
-    <div className="border-mobai-orange flex flex-col gap-4 rounded-lg border-2 p-4 py-6">
-      <div className="border-mobai-orange flex flex-col gap-1 border-b pb-4">
+    <div className="border-mobai-gray flex flex-col gap-4 rounded-lg border-2 p-4 py-6">
+      <div className="border-mobai-gray flex flex-col gap-1 border-b-2 pb-4">
         <p className="text-mobai-orange text-3xl font-bold">{number}</p>
         <p className="text-foreground text-2xl font-semibold">{title}</p>
       </div>
