@@ -11,7 +11,7 @@ interface TitleBarProps {
 const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
   const isRoot = currentPath === translatePath("/");
   const textColor = isRoot ? "text-mobai-gray" : "text-foreground";
-  const bgColor = isRoot ? "bg-[#BA3C00]" : "bg-black";
+  const bgColor = "bg-[#BA3C00]";
 
   return (
     <div class="bg-background fixed top-0 z-50 flex w-full items-center justify-between p-6">
