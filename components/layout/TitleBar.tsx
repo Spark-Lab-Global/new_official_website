@@ -30,9 +30,6 @@ const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
               <a href={translatePath("/manifesto")}>{t("nav.manifesto")}</a>
             </li>
             <li>
-              <a href={translatePath("/portfolio")}>{t("nav.portfolio")}</a>
-            </li>
-            <li>
               <a href={translatePath("/people")}>{t("nav.people")}</a>
             </li>
             {/* <li>

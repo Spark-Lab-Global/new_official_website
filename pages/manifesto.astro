@@ -1,6 +1,7 @@
 ---
 import Next from "@/components/ui/Next";
 import Layout from "@/layouts/Layout.astro";
+import A3 from "@/sections/home/A3.astro";
 import B1 from "@/sections/manifesto/B1";
 import B2 from "@/sections/manifesto/B2";
 import B3 from "@/sections/manifesto/B3";
@@ -8,6 +9,10 @@ import B3 from "@/sections/manifesto/B3";
 
 import { getImage } from "astro:assets";
 import b2_a from "@/assets/b2/a.png";
+import a3_a from "@/assets/a3/a.png";
+import a3_b from "@/assets/a3/b.png";
+import a3_c from "@/assets/a3/c.png";
+import a3_d from "@/assets/a3/d.png";
 
 import {
   getLangFromUrl,
@@ -23,10 +28,29 @@ const b2_a_image = await getImage({
   src: b2_a,
   format: "webp",
 });
+const a3_images = await Promise.all([
+  getImage({
+    src: a3_a,
+    format: "webp",
+  }),
+  getImage({
+    src: a3_b,
+    format: "webp",
+  }),
+  getImage({
+    src: a3_c,
+    format: "webp",
+  }),
+  getImage({
+    src: a3_d,
+    format: "webp",
+  }),
+]);
 ---
 
 <Layout>
   <div class="flex flex-col gap-10 pt-30">
+    <A3 t={t} images={a3_images} />
     <B1 t={t} />
     <B2 t={t} imageSrc={b2_a_image.src} />
     <B3 t={t} />
