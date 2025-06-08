@@ -11,6 +11,8 @@
   "dependencies": {
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/preact": "^4.1.0",
+    "@fontsource/instrument-serif": "^5.2.6",
+    "@fontsource/red-hat-text": "^5.2.6",
     "@tailwindcss/vite": "^4.1.8",
     "astro": "^5.8.1",
     "preact": "^10.26.8",

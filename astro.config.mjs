@@ -9,12 +9,12 @@ export default defineConfig({
   experimental: {
     fonts: [
       {
-        provider: fontProviders.google(),
+        provider: fontProviders.fontsource(),
         name: "Instrument Serif",
         cssVariable: "--font-title",
       },
       {
-        provider: fontProviders.google(),
+        provider: fontProviders.fontsource(),
         name: "Red Hat Text",
         cssVariable: "--font-body",
         weights: [400, 500, 600, 700],
