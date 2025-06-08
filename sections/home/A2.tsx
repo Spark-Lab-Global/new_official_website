@@ -39,7 +39,7 @@ const A2 = ({ t, translatePath, imageSrc }: A2Props) => {
                 {t("nav.manifesto")}
               </a>
             </li>
-            <li className="text-mobai-gray">|</li>
+            {/* <li className="text-mobai-gray">|</li>
             <li>
               <a
                 href={translatePath("/portfolio")}
@@ -47,7 +47,7 @@ const A2 = ({ t, translatePath, imageSrc }: A2Props) => {
               >
                 {t("nav.portfolio")}
               </a>
-            </li>
+            </li> */}
             <li className="text-mobai-gray">|</li>
             <li>
               <a
