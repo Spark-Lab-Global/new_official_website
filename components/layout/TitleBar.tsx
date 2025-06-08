@@ -14,7 +14,7 @@ const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
   const bgColor = "bg-[#BA3C00]";
 
   return (
-    <div class="bg-background fixed top-0 z-50 flex w-full items-center justify-between p-6">
+    <div class="bg-background top-0 z-50 flex w-full items-center justify-between p-6">
       <div className="mx-auto flex w-full max-w-screen-xl items-center justify-between">
         <a href={translatePath("/")}>
           <SparkLab class="h-12 w-12 fill-black" />
