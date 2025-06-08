@@ -2,6 +2,9 @@
 import A1 from "@/sections/home/A1";
 import A2 from "@/sections/home/A2";
 import A3 from "@/sections/home/A3.astro";
+import C1 from "@/sections/portfolio/C1";
+import C2 from "@/sections/portfolio/C2";
+
 import Next from "@/components/ui/Next";
 import Layout from "@/layouts/Layout.astro";
 
@@ -12,6 +15,7 @@ import a3_a from "@/assets/a3/a.png";
 import a3_b from "@/assets/a3/b.png";
 import a3_c from "@/assets/a3/c.png";
 import a3_d from "@/assets/a3/d.png";
+import c2_a from "@/assets/c2/a.svg";
 
 import {
   getLangFromUrl,
@@ -51,12 +55,18 @@ const a3_images = await Promise.all([
     format: "webp",
   }),
 ]);
+const c2_a_image = await getImage({
+  src: c2_a,
+  format: "svg",
+});
 ---
 
 <Layout>
   <div class="flex flex-col gap-20">
     <A1 imageSrc={a1_a_image.src} client:load />
     <A2 imageSrc={a2_a_image.src} t={t} translatePath={translatePath} />
+    <C1 t={t} />
+    <C2 t={t} imageSrc={c2_a_image.src} />
     <A3 t={t} images={a3_images} />
   </div>
   <Next title="Manifesto" href={translatePath("/manifesto")} />
