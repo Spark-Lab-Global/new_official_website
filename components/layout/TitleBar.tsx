@@ -23,16 +23,16 @@ const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
           <ul
             className={`${textColor} hidden flex-row items-center gap-4 text-xl font-medium md:flex`}
           >
-            <li>
+            <li className="hover:underline">
               <a href={translatePath("/")}>{t("nav.about")}</a>
             </li>
-            <li>
+            <li className="hover:underline">
               <a href={translatePath("/manifesto")}>{t("nav.manifesto")}</a>
             </li>
-            <li>
+            <li className="hover:underline">
               <a href={translatePath("/people")}>{t("nav.people")}</a>
             </li>
-            {/* <li>
+            {/* <li className="hover:underline">
               <a href={translatePath("/program")}>{t("nav.program")}</a>
             </li> */}
           </ul>
