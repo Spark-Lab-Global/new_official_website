@@ -12,10 +12,11 @@ const A2 = ({ t, translatePath, imageSrc }: A2Props) => {
     <div className="flex flex-col gap-10 p-10">
       <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-10">
         <h2 className="font-title text-3xl font-bold lg:text-5xl">
+          <span className="text-foreground">Find your </span>
           <span className="text-mobai-orange decoration-mobai-orange">
             Spark
           </span>
-          <span className="text-foreground"> the New Renaissance.</span>
+          <span className="text-foreground"> by getting lost.</span>
         </h2>
         {/* <div className="relative flex flex-col gap-1"> */}
         <p className="text-mobai-gray font-body text-base whitespace-pre-line lg:text-lg">
@@ -23,7 +24,7 @@ const A2 = ({ t, translatePath, imageSrc }: A2Props) => {
         </p>
         <img
           src={imageSrc}
-          alt="Spark the New Renaissance"
+          alt="Find your spark by getting lost"
           className="w-full"
         />
       </div>
