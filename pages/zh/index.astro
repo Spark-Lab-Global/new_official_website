@@ -1,6 +1,7 @@
 ---
 import A1 from "@/sections/home/A1";
 import A2 from "@/sections/home/A2";
+import B2 from "@/sections/manifesto/B2";
 import C1 from "@/sections/portfolio/C1";
 import C2 from "@/sections/portfolio/C2";
 
@@ -10,6 +11,7 @@ import Layout from "@/layouts/Layout.astro";
 import { getImage } from "astro:assets";
 import a1_a from "@/assets/a1/a.png";
 import a2_a from "@/assets/a2/a.svg";
+import b2_a from "@/assets/b2/a.png";
 import c2_a from "@/assets/c2/a.svg";
 
 import {
@@ -32,6 +34,10 @@ const a2_a_image = await getImage({
   format: "svg",
 });
 
+const b2_a_image = await getImage({
+  src: b2_a,
+  format: "webp",
+});
 
 const c2_a_image = await getImage({
   src: c2_a,
@@ -43,6 +49,7 @@ const c2_a_image = await getImage({
   <div class="flex flex-col gap-20">
     <A1 imageSrc={a1_a_image.src} client:load />
     <A2 imageSrc={a2_a_image.src} t={t} translatePath={translatePath} />
+    <B2 t={t} imageSrc={b2_a_image.src} />
     <C1 t={t} />
     <C2 t={t} imageSrc={c2_a_image.src} />
   </div>
