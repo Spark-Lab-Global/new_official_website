@@ -5,7 +5,7 @@ import c from "@/assets/e2/c.png";
 const Block = ({ src, title }: { src: string; title: string }) => {
   return (
     <div className="flex flex-1 flex-col gap-4 border-4 border-[#3A3A3A] p-4">
-      <div className="aspect-[4/3] w-full overflow-hidden">
+      <div className="aspect-[4/6] w-full overflow-hidden">
         <img src={src} alt="" className="h-full w-full object-cover" />
       </div>
       <div className="flex flex-col gap-2">
