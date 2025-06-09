@@ -32,17 +32,20 @@ const TitleBar = ({ currentPath = "/", t, translatePath }: TitleBarProps) => {
             <li className="hover:underline">
               <a href={translatePath("/people")}>{t("nav.people")}</a>
             </li>
+            <li className="hover:underline">
+              <a href={translatePath("/program")}>{t("nav.program")}</a>
+            </li>
             {/* <li className="hover:underline">
               <a href={translatePath("/program")}>{t("nav.program")}</a>
             </li> */}
           </ul>
           <LanguagePicker currentPath={currentPath} testColor={textColor} />
-          <a
+          {/* <a
             href={translatePath("/apply")}
             className={`${bgColor} flex h-9 items-center justify-center rounded-full px-3 font-medium`}
           >
             {t("nav.apply")}
-          </a>
+          </a> */}
         </nav>
       </div>
     </div>

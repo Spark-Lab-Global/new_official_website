@@ -19,13 +19,20 @@ const B2 = ({ t, imageSrc }: B2Props) => {
           <div className="grid w-full grid-cols-1 gap-20 md:grid-cols-[1fr_1fr]">
             <img src={imageSrc} alt="Spark Lab" className="w-full" />
             <div className="mt-auto flex flex-col gap-20">
-              <p className="text-mobai-gray w-full text-base lg:text-lg">
-                <span className="font-bold">Mission:</span> {t("b2.content2")}
-                <br />
-                <span className="font-bold">Vision:</span> {t("b2.content3")}
-                <br />
-                <span className="font-bold">Values:</span> {t("b2.content4")}
-              </p>
+              <div className="text-mobai-gray w-full text-base lg:text-lg space-y-6">
+                <div>
+                  <span className="text-foreground font-title text-2xl font-bold inline-block mb-5">Mission:</span>
+                  <p>{t("b2.content2")}</p>
+                </div>
+                <div>
+                  <span className="text-foreground font-title text-2xl font-bold inline-block mb-5">Vision:</span>
+                  <p>{t("b2.content3")}</p>
+                </div>
+                <div>
+                  <span className="text-foreground font-title text-2xl font-bold inline-block mb-5">Values:</span>
+                  <p>{t("b2.content4")}</p>
+                </div>
+              </div>
               <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
                 {t("b2.content5")}
               </p>
