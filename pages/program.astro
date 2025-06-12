@@ -4,9 +4,15 @@ import E1 from "@/sections/program/E1";
 import E2 from "@/sections/program/E2";
 // import E3 from "@/sections/apply/E3";
 import E4 from "@/sections/program/E4";
+import B3 from "@/sections/manifesto/B3";
 
 import { getImage } from "astro:assets";
 import e1_a from "@/assets/e1/a.png";
+
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const e1_a_image = await getImage({
   src: e1_a,
@@ -20,5 +26,6 @@ const e1_a_image = await getImage({
     <E2 />
     <!-- <E3 /> -->
     <E4 />
+    <B3 t={t} />
   </div>
 </Layout>

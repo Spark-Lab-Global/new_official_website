@@ -1,9 +1,8 @@
 ---
 import Next from "@/components/ui/Next";
 import Layout from "@/layouts/Layout.astro";
-import A3 from "@/sections/home/A3.astro";
+import A3 from "@/sections/home/A3";
 import B1 from "@/sections/manifesto/B1";
-import B3 from "@/sections/manifesto/B3";
 // import B4 from "@/sections/en/manifesto/B4";
 
 import { getImage } from "astro:assets";
@@ -21,7 +20,6 @@ import {
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
-
 
 const a3_images = await Promise.all([
   getImage({

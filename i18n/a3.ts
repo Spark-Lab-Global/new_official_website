@@ -33,23 +33,31 @@ Spark 从不凭空而生。
 和一群野生创始人一起，
 将 spark 化为现实。
 `,
+    "a3.timeline.1968.description":
+      'Mother of All Demos - 它开启了"用代码+界面表达思想"这条线，是创意 + 技术的最原始交汇点',
+    "a3.timeline.1981.description":
+      'MTV - 它把"技术媒介 → 文化放大器"的能力带入大众视野，是"内容塑造身份"的开始',
+    "a3.timeline.2005.description":
+      'YC - 它代表了"创业成为表达形式"，是一代 builder 的舞台格式化高峰',
+    "a3.timeline.2025.description":
+      "Spark Lab 是这一演进线的自然延续：每个人成为一个火种，用产品讲述自我",
   },
   en: {
     "a3.thesis1.title": "Spark is the fire buried deep inside you.",
-    "a3.thesis1.description": `It’s not divine inspiration, a childhood calling, or the next big trend.
-It’s the spark you stumble upon after countless moments of real exploration, hands-on practice, and conscious detours.
+    "a3.thesis1.description": `It's not divine inspiration, a childhood calling, or the next big trend.
+It's the spark you stumble upon after countless moments of real exploration, hands-on practice, and conscious detours.
 
-When you find it, you’ll know:
-It isn’t imposed by the outside world — it’s the world you long to build, the thing you feel compelled to do.
+When you find it, you'll know:
+It isn't imposed by the outside world — it's the world you long to build, the thing you feel compelled to do.
 You ignite yourself — and in doing so, you ignite the world.
 `,
     "a3.thesis2.title":
       "Building is the journey of externalizing your inner world and past experiences.",
     "a3.thesis2.description": `True, lasting drive comes from discovering an inner sense of mission.
-Entrepreneurship isn’t just about solving market problems —
-It’s a tangible expression of the founder’s past experiences and personal agency.
+Entrepreneurship isn't just about solving market problems —
+It's a tangible expression of the founder's past experiences and personal agency.
 
-The most moving startups often begin with a deep obsession with a possibility that won’t let go.
+The most moving startups often begin with a deep obsession with a possibility that won't let go.
 Spark is the origin of all motivation —
 Not born out of a desire for success,
 But out of a sense of necessity.
@@ -64,7 +72,7 @@ What we truly lack is a real and free environment:
 A place where you can slow down, get lost, and realign with what matters.
 A fertile ground where sparks can be discovered, ignited, and built upon.
 
-We’ll stand with you as you answer the earliest and most essential question:
+We'll stand with you as you answer the earliest and most essential question:
 What are you willing to burn for?
 And what keeps the fire going — is being surrounded by others who are also burning.
 You are not walking alone.
@@ -72,6 +80,14 @@ You are beside a fire,
 Surrounded by wild founders,
 Turning your spark into reality.
 `,
+    "a3.timeline.1968.description":
+      "Mother of All Demos - It opened the line of 'expressing ideas through code and interface', the most primitive intersection of creativity and technology",
+    "a3.timeline.1981.description":
+      "MTV - It brought the ability of 'technology as a cultural amplifier' into the public eye, marking the beginning of 'identity shaping through content'",
+    "a3.timeline.2005.description":
+      "YC - It represented the moment when 'entrepreneurship became an expression form', marking the peak of the generation of builders",
+    "a3.timeline.2025.description":
+      "Spark Lab is the natural next step in this evolution: everyone becomes a spark - telling their story through the products they create.",
   },
 };
 
