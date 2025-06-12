@@ -1,4 +1,4 @@
-import type { SVGProps } from "preact/compat";
+import type { SVGProps } from "react";
 
 function Linkedin(props: SVGProps<SVGSVGElement>) {
   return (

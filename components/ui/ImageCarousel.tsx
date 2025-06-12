@@ -2,7 +2,7 @@ import aImage from "@/assets/a3/a.png";
 import bImage from "@/assets/a3/b.png";
 import cImage from "@/assets/a3/c.png";
 import dImage from "@/assets/a3/d.png";
-import { useEffect, useRef, useState } from "preact/hooks";
+import { useEffect, useRef, useState } from "react";
 
 const CONFIG = {
   IMAGE_HEIGHT: 500,
@@ -35,7 +35,7 @@ const useCarousel = (images: ImageData[]) => {
   const [imageWidths, setImageWidths] = useState<number[]>([]);
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState<DragState>({ x: 0, scrollX: 0 });
-  const autoScrollRef = useRef<ReturnType<typeof setInterval>>();
+  const autoScrollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const totalWidth = imageWidths.reduce((sum, width) => sum + width, 0);
 

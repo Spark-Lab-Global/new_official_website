@@ -10,7 +10,7 @@ const A1 = ({ imageSrc }: A1Props) => {
     <div
       className="relative flex h-screen flex-col bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url(${imageSrc})`,
+        backgroundImage: imageSrc ? `url(${imageSrc})` : 'none',
       }}
     >
       {/* <div className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col items-center justify-center p-10">
