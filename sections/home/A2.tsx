@@ -51,10 +51,10 @@ const A2 = ({ t, translatePath, imageSrc }: A2Props) => {
             <li className="text-mobai-gray">|</li>
             <li>
               <a
-                href={translatePath("/people")}
+                href={translatePath("/team")}
                 className="decoration-mobai-gray underline decoration-1 underline-offset-2"
               >
-                {t("nav.people")}
+                {t("nav.team")}
               </a>
             </li>
             <li className="text-mobai-gray">|</li>
