@@ -5,6 +5,7 @@ import D1 from "@/sections/team/D1";
 import D2 from "@/sections/team/D2";
 import D3 from "@/sections/team/D3";
 import D4 from "@/sections/team/D4";
+import JoinTeam from "@/sections/team/JoinTeam";
 
 import { getImage } from "astro:assets";
 import d1_a from "@/assets/d1/a.webp";
@@ -72,5 +73,8 @@ const d2_images = await Promise.all([
     <D3 />
     <D4 t={t} />
   </div>
+
+  <JoinTeam t={t} />
+
   <Next title="Apply" href={translatePath("/program")} />
 </Layout>

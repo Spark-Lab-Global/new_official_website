@@ -7,6 +7,7 @@ import b3 from "./b3";
 import c1 from "./c1";
 import c2 from "./c2";
 import d4 from "./d4";
+import team from "./team";
 import ui from "./ui";
 
 const translations = {
@@ -21,6 +22,7 @@ const translations = {
     ...c1.zh,
     ...c2.zh,
     ...d4.zh,
+    ...team.zh,
   },
   en: {
     ...ui.en,
@@ -33,6 +35,7 @@ const translations = {
     ...c1.en,
     ...c2.en,
     ...d4.en,
+    ...team.en,
   },
 };
 
