@@ -13,6 +13,24 @@ const Demo = () => {
   ...
 }
 ```
+- If a CSR component, do not use astro to pass parameters.
+
+Bad Case:
+```astro
+<B3 t={t} client:visible />
+```
+Reason: This will cause the component to be rendered on the server side, which is not what we want.
+
+Good Case:
+```astro
+<B3 client:only="react" />
+
+export const B3 = () => {
+  const { t } = useI18n();
+  ...
+}
+```
+
 
 
 ## Other
