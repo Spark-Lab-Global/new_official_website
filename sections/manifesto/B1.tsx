@@ -1,36 +1,51 @@
 import ryan from "@/assets/ryan.svg";
-import { useTranslations } from "@/i18n/utils";
+import { useI18n } from "@/hooks/useI18n";
 
 interface B1Props {
-  t: ReturnType<typeof useTranslations>;
+  bgImageSrc: string;
 }
 
-const B1 = ({ t }: B1Props) => {
+const B1 = ({ bgImageSrc }: B1Props) => {
+  const { t } = useI18n();
+
+  if (!t) return null;
+
   return (
-    <div className="p-10">
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-20">
-        <div className="flex flex-col gap-20">
-          <div className="text-foreground font-title flex text-3xl font-bold lg:text-5xl">
-            Find your spark by getting lost.
+    <div className="p-4 sm:p-6 md:p-10">
+      <div
+        className="relative mx-auto w-full max-w-4xl overflow-hidden rounded-xs shadow-xl"
+        style={{
+          backgroundImage: `url(${bgImageSrc})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="relative p-6 sm:p-8 md:p-12">
+          <div className="relative mb-6 md:mb-10 border-b border-gray-600/30 pb-4">
+            <h2 className="text-gray-800 font-title text-2xl sm:text-3xl font-bold lg:text-5xl">
+              Find your spark by getting lost.
+            </h2>
           </div>
-          <div className="flex flex-col gap-1">
-            <p className="text-mobai-gray text-base lg:text-lg">
+
+          <div className="relative flex flex-col gap-4 sm:gap-6">
+            <p className="text-gray-700 text-sm sm:text-base lg:text-lg">
               {t("b1.content1")}
             </p>
-            <p className="text-mobai-gray text-base lg:text-lg">
+            <p className="text-gray-700 text-sm sm:text-base lg:text-lg">
               {t("b1.content2")}
             </p>
           </div>
-        </div>
-        <div className="relative flex flex-col gap-1">
-          <p className="text-mobai-gray text-base whitespace-pre-line lg:text-lg">
-            {t("b1.content3")}
-          </p>
-          <img
-            src={ryan.src}
-            alt="ryan"
-            className="absolute right-0 bottom-0 w-24 lg:w-32"
-          />
+
+          <div className="relative mt-6 md:mt-10 flex flex-col gap-1">
+            <p className="text-gray-700 whitespace-pre-line text-sm sm:text-base lg:text-lg">
+              {t("b1.content3")}
+            </p>
+            <img
+              src={ryan.src}
+              alt="ryan"
+              className="absolute right-0 bottom-0 w-16 sm:w-20 md:w-24 lg:w-32"
+            />
+          </div>
         </div>
       </div>
     </div>

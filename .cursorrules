@@ -3,3 +3,29 @@ This project use astro, react, shadcn, framer-motion to build the Spark Lab offi
 ## Rules
 - use pnpm not npm, eg: `pnpm i react`
 - Use Astro for the outermost layer, but write the core page components using React. The Astro part should not contain any UI code.
+- If use motion in react component, use the following method to get the translations:
+
+```typescript
+import { useI18n } from "@/hooks/useI18n";
+
+const Demo = () => {
+  const { t } = useI18n();
+  ...
+}
+```
+
+
+## Other
+
+- frmaer-motion now named `motion`, use 
+
+```typescript
+import {
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+  motion,
+} from "motion/react";
+```
+
+to import the motion module.

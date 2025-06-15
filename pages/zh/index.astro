@@ -61,7 +61,10 @@ const c2_a_image = await getImage({
   <div class="flex flex-col gap-20">
     <A1 imageSrc={a1_a_image.src} client:load />
     <A2 imageSrc={a2_a_image.src} t={t} translatePath={translatePath} />
-    <A3 t={t} images={a3_images.map((img) => ({ src: img.src }))} client:load />
+    <A3
+      images={a3_images.map((img) => ({ src: img.src }))}
+      client:only="react"
+    />
     <B2 t={t} imageSrc={b2_a_image.src} />
     <C1 t={t} />
     <C2 t={t} imageSrc={c2_a_image.src} />

@@ -1,11 +1,10 @@
 import { Timeline } from "@/components/ui/timeline";
-import { useTranslations } from "@/i18n/utils";
 import { type FC } from 'react';
+import { useI18n } from "@/hooks/useI18n";
 
 const THESIS_KEYS = ["thesis1", "thesis2", "thesis3"] as const;
 
 interface A3Props {
-  t: ReturnType<typeof useTranslations>;
   images?: Array<{
     src: string;
     width?: number;
@@ -14,7 +13,11 @@ interface A3Props {
   }>;
 }
 
-const A3: FC<A3Props> = ({ t, images }) => {
+const A3: FC<A3Props> = ({ images }) => {
+  const { t } = useI18n();
+
+  if (!t) return null;
+
   const timelineData = [
     {
       title: "1968",
