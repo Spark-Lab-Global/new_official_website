@@ -8,12 +8,12 @@ interface B2Props {
 const B2 = ({ t, imageSrc }: B2Props) => {
   return (
     <div className="p-10">
-      <div className="mx-auto flex max-w-screen-xl flex-col gap-20">
+      <div className="mx-auto flex max-w-screen-xl flex-col ">
         <h2 className="text-foreground font-title text-3xl font-bold lg:text-5xl">
           What is Spark Lab?
         </h2>
         <div className="flex flex-col items-center gap-20">
-          <p className="text-mobai-gray w-full text-base lg:text-lg">
+          <p className="text-mobai-gray w-full text-base whitespace-pre-line lg:text-lg">
             {t("b2.content1")}
           </p>
           <div className="grid w-full grid-cols-1 gap-20 md:grid-cols-[1fr_1fr]">
