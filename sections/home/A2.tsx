@@ -28,8 +28,8 @@ const A2 = ({ t, translatePath, imageSrc }: A2Props) => {
           className="w-full"
         />
       </div>
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-1">
-        <nav>
+      <div className="mx-auto mt-16 flex w-full max-w-screen-xl flex-col gap-1">
+        <nav className="flex justify-center">
           <ul className="text-mobai-gray flex flex-row items-center gap-2 text-base lg:text-lg">
             <li>
               <a
@@ -63,12 +63,12 @@ const A2 = ({ t, translatePath, imageSrc }: A2Props) => {
                 href={translatePath("/program")}
                 className="decoration-mobai-gray underline decoration-1 underline-offset-2"
               >
-                {t("nav.apply")}
+                {t("nav.program")}
               </a>
             </li>
           </ul>
         </nav>
-        <p className="text-mobai-gray text-base lg:text-lg">
+        <p className="text-mobai-gray text-base lg:text-lg text-center">
           {t("a2.content2")}
         </p>
       </div>

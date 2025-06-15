@@ -1,2 +1,5 @@
+This project use astro, react, shadcn, framer-motion to build the Spark Lab offical website.
+
 ## Rules
-use pnpm not npm
+- use pnpm not npm
+- Use Astro for the outermost layer, but write the core page components using React. The Astro part should not contain any UI code.
